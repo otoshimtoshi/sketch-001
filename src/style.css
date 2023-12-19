@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: #0b151b;
+}
+
+.info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 32px;
+  z-index: 1;
+  text-shadow: 0 0.05rem 0.05rem white;
+}
+.info :nth-child(n) {
+  margin-top: 16px;
+}
+.info :first-child {
+  margin-top: 0;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    object-fit: contain;
+  }
+}
